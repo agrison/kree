@@ -7,7 +7,7 @@ That's why I made this plugin, in order to learn and because sometimes it can be
 
 # Screenshot
 
-![](https://github.com/agrison/kree/raw/master/doc/screens/1.png)
+[![On Windows](https://github.com/agrison/kree/raw/master/doc/screens/win1.small.png)](https://github.com/agrison/kree/raw/master/doc/screens/win1.png)
 
 # About the name
 

@@ -16,9 +16,10 @@ I like the Stargate universe a lot, I needed a name, here it is.
 
 # Todos
 
-Preference pane for setting guide colors (cycle)
-Highlighting parens with different colors (if = green, else = blue, ...; ala CodeKana)
-More features, less bugs.
+* Preference pane for setting guide colors (cycle)
+* Highlighting parens with different colors (if = green, else = blue, ...; ala CodeKana)
+* More features
+* Less bugs.
 
 ## License
 

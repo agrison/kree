@@ -56,19 +56,5 @@
          </toolbar>
       </menuContribution>
    </extension>
-   
-   	<!--extension point = "org.eclipse.ui.actionSets">
-	   <actionSet id="pm.eclipse.editbox.ActionSetId" label="EditBox" visible="true">
-		   <action id="kree.EnableKreeActionId"
-			            label="Kree!" 
-						toolbarPath="Kree"
-						style="toggle"
-						icon="icons/sample.gif" 
-						tooltip="Kree on/off"  
-						class="kree.actions.EnableKree"
-						definitionId="kree.actions.EnableKreeCmd" >
-		   </action>
-	   </actionSet>
-	</extension-->
 
 </plugin>

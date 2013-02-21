@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.eclipse.ui.commands">
+      <category
+            name="Sample Category"
+            id="Kree.commands.category">
+      </category>
+      <!-- Kree on/off command -->
+      <command
+            name="Sample Command"
+            categoryId="Kree.commands.category"
+            id="Kree.commands.KreeEnable">
+         <!-- Toggle button push state given to the command -->
+         <state 
+         	class="org.eclipse.ui.handlers.RegistryToggleState:true" 
+         	id="org.eclipse.ui.commands.toggleState"> 
+         </state> 
+      </command>
+   </extension>
+   
+   
+   <!-- Kree on/off command Handler -->
+   <extension point="org.eclipse.ui.handlers">
+      <handler
+            commandId="Kree.commands.KreeEnable"
+            class="kree.handlers.KreeEnable">
+      </handler>
+   </extension>
+   
+   
+   <!-- Key binding -->
+   <extension point="org.eclipse.ui.bindings">
+      <key
+            commandId="Kree.commands.KreeEnable"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   
+   
+   <!-- menu extension: add a simple toggle button to enable/disable Kree! -->
+   <extension point="org.eclipse.ui.menus">
+      <menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar id="Kree.toolbars.sampleToolbar">
+            <command
+                  commandId="Kree.commands.KreeEnable"
+                  icon="icons/icon.png"
+                  label="Kree!"
+                  toolbarPath="Kree"
+                  style="toggle"
+                  tooltip="Kree on/off"
+                  id="Kree.toolbars.KreeEnable">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   
+   	<!--extension point = "org.eclipse.ui.actionSets">
+	   <actionSet id="pm.eclipse.editbox.ActionSetId" label="EditBox" visible="true">
+		   <action id="kree.EnableKreeActionId"
+			            label="Kree!" 
+						toolbarPath="Kree"
+						style="toggle"
+						icon="icons/sample.gif" 
+						tooltip="Kree on/off"  
+						class="kree.actions.EnableKree"
+						definitionId="kree.actions.EnableKreeCmd" >
+		   </action>
+	   </actionSet>
+	</extension-->
+
+</plugin>
